@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+group = 'com.icode'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'org.apache.tomcat:tomcat-servlet-api:7.0.35'
+    providedCompile 'org.apache.tomcat:tomcat-jsp-api:7.0.35'
+    providedCompile 'org.projectlombok:lombok:0.11.8'
+    compile 'jstl:jstl:1.2'
+    compile 'taglibs:standard:1.1.2'
+    compile 'mysql:mysql-connector-java:5.1.14'
+    compile 'org.hibernate:hibernate-core:4.1.9.Final'
+    compile 'org.springframework:spring-core:3.2.1.RELEASE'
+    compile 'org.springframework:spring-beans:3.2.1.RELEASE'
+    compile 'org.springframework:spring-context:3.2.1.RELEASE'
+    compile 'org.springframework:spring-web:3.2.1.RELEASE'
+    compile 'org.springframework:spring-webmvc:3.2.1.RELEASE'
+    compile 'org.springframework:spring-orm:3.2.1.RELEASE'
+    compile 'org.springframework.integration:spring-integration-mail:2.2.2.RELEASE'
+    compile 'org.springframework.security:spring-security-core:3.1.3.RELEASE'
+    compile 'org.springframework.security:spring-security-web:3.1.3.RELEASE'
+    compile 'org.springframework.security:spring-security-config:3.1.3.RELEASE'
+    compile 'commons-dbcp:commons-dbcp:1.4'
+    compile 'commons-pool:commons-pool:1.6'
+    compile 'joda-time:joda-time:2.1'
+    compile 'org.jadira.usertype:usertype.core:3.1.0.CR1'
+    compile 'log4j:log4j:1.2.17'
+    compile 'commons-collections:commons-collections:3.2.1'
+    compile 'org.aspectj:aspectjweaver:1.7.2'
+    testCompile 'org.testng:testng:6.8.5'
+    testCompile 'org.springframework:spring-test:3.2.1.RELEASE'
+}
